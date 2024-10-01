@@ -343,6 +343,13 @@ knitr::include_graphics("img/quarto.005.png")
 
 ```{r}
 #| echo: false
+knitr::include_graphics("img/quarto.007.png")
+```
+
+## Quarto parts
+
+```{r}
+#| echo: false
 knitr::include_graphics("img/quarto.006.png")
 ```
 
