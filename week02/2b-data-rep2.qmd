@@ -477,3 +477,6 @@ knitr::include_graphics("img/hist-braille.png")
 
 ::::
 
+# Learning Tip of The Day
+
+[Cell phone usage and academic performance: An experiment](https://www.sciencedirect.com/science/article/abs/pii/S0360131517302324)

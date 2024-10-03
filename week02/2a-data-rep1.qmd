@@ -487,3 +487,6 @@ The new line is indented by two spaces. RStudio does this automatically for you.
 
 Using the `penguins` data frame ask a question that you are interested in answering. Visualize data to get a visual answer to the question. What is the visual telling you? Note all of this down in your lecture notes.
 
+## Learning Tip of the Day
+
+[Why does peer instruction benefit student learning?](https://link.springer.com/article/10.1186/s41235-020-00218-5)
