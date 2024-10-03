@@ -481,7 +481,7 @@ Always use `.Rproj` file to open projects. Then open the appropriate `.qm`d / `.
 
 **repo** is a short form of repository. Repositories contain all of your project's files as well as each file's revision history.
 
-For this course our daily repos (lecture code, activity etc.) are hosted on Github. 
+For this course our weekly repos (lecture code, activity etc.) are hosted on Github. 
 
 To **clone** a GitHub repo to our computer, we first copy the cloning link as shown in screencast then start an RStudio project using that link.  
 
