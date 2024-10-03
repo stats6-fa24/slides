@@ -121,8 +121,10 @@ nrow(bad_drivers)
 
 ## Getting to Know the Data Frame 
 
-ADD SCREENSHOT HERE
 
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('img/data-environment.png')
+```
 
 ##
 
