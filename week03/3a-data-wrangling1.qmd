@@ -577,3 +577,7 @@ lapd |>
 :::
 ::::
 :::
+
+## Learning Tip of the Day
+
+[Exercise Improves Academic Performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3033774)
