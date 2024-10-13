@@ -382,7 +382,7 @@ Does this look familiar?
 
 ::: {.incremental}
 
-What if we tracked our file with a better names for each version and have only 1 file **hw1**?
+What if we tracked our file with better names for each version and have only 1 file **hw1**?
 
 
 - hw1 ***added questions 1 through 5***
