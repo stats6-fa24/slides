@@ -458,7 +458,7 @@ lapd |>
 
 **Goal**: 
 
-Create a new variable called `base_pay_level` which has `Less Than 0`, `No Income`, `Less than 100K and Greater than 0` and `Greater than 100K`. 
+Create a new variable called `base_pay_level` which has `Less Than 0`, `No Income`, `Between 0 and 100K` and `Greater than 100K`. 
 
 
 ##
