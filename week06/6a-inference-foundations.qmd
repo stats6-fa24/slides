@@ -18,6 +18,7 @@ format:
 ---
 
 ```{r}
+#| echo: false
 library(tidyverse)
 
 plot_beta_prob <- function(value, alpha, beta, direction = "lower"){
