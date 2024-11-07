@@ -246,7 +246,7 @@ When a population parameter is known (i.e., $\pi = \frac{2}{3}$) and the sample 
 ##
 
 Let $X$ represent the number of heads in three coin flips.
-We can possibly have 0, 1, 2, or 3 head(s) in four coin flips. 
+We can possibly have 0, 1, 2, or 3 head(s) in three coin flips. 
 We can ask questions like what is the probability that we observe 1 head in three coin flips.
 
 ##
@@ -426,7 +426,7 @@ We can see in the previous plot that the probability a baby is born low weight i
 ## Beta distribution
 
 We use Beta distribution to model random variables that can take values 0 and 1.
-In @sec-bayesian we will use the Beta distribution to model the parameter $\pi$.
+Next class we will use the Beta distribution to model the parameter $\pi$.
 Beta distribution has two parameters $\alpha$ and $\beta$.
 Let random variable, $\pi$ represent the proportion of bike owners on campus.
 The Beta distribution takes two shape parameters as $\alpha$ and $\beta$. 
