@@ -283,13 +283,17 @@ posterior_odds <- posterior_prob / (1 - posterior_prob)
 posterior_odds
 ```
 
-## The __Bayes Factor (BF)__ compares the posterior odds to the prior odds, hence provides insight into just how much the feminist's understanding about movies passing the Bechdel test _evolved_ upon observing the sample data:
+## 
+
+The __Bayes Factor (BF)__ compares the posterior odds to the prior odds, hence provides insight into just how much the feminist's understanding about movies passing the Bechdel test _evolved_ upon observing the sample data:
 
 
 $$\text{Bayes Factor} = \frac{\text{Posterior odds }}{\text{Prior odds }}$$
 
-```{r echo = FALSE}
+
+```{r}
 BF <- posterior_odds / prior_odds
+BF
 ```
 
 

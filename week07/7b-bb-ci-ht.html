@@ -587,9 +587,17 @@ Dr.&nbsp;Mine Dogucu
 </div>
 </div>
 </section>
-<section id="the-bayes-factor-bf-compares-the-posterior-odds-to-the-prior-odds-hence-provides-insight-into-just-how-much-the-feminists-understanding-about-movies-passing-the-bechdel-test-evolved-upon-observing-the-sample-data" class="slide level2">
-<h2>The <strong>Bayes Factor (BF)</strong> compares the posterior odds to the prior odds, hence provides insight into just how much the feminist’s understanding about movies passing the Bechdel test <em>evolved</em> upon observing the sample data:</h2>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<p>The <strong>Bayes Factor (BF)</strong> compares the posterior odds to the prior odds, hence provides insight into just how much the feminist’s understanding about movies passing the Bechdel test <em>evolved</em> upon observing the sample data:</p>
 <p><span class="math display">\[\text{Bayes Factor} = \frac{\text{Posterior odds }}{\text{Prior odds }}\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>BF <span class="ot">&lt;-</span> posterior_odds <span class="sc">/</span> prior_odds</span>
+<span id="cb24-2"><a href="#cb24-2"></a>BF</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2221748</code></pre>
+</div>
+</div>
 </section>
 <section id="bayes-factor" class="slide level2">
 <h2>Bayes Factor</h2>
@@ -599,7 +607,7 @@ Dr.&nbsp;Mine Dogucu
 = \frac{P(H_a | Y) / P(H_0 | Y)}{P(H_a) / P(H_0)}
 \; .\]</span></p>
 </section>
-<section id="section-9" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <p>As a ratio, it’s meaningful to compare the Bayes Factor (BF)&nbsp;to 1. To this end, consider three possible scenarios:</p>
 <ol type="1">
