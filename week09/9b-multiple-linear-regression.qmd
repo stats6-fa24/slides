@@ -77,17 +77,17 @@ $\hat {\text{bwt}_i} = -0.932 + (0.443 \times 280) + (-8.09 \times 1)$
 ##
 
 ```{r}
-babies %>% 
-  modelr::add_predictions(model_gs) %>% 
+babies |> 
+  modelr::add_predictions(model_gs) |> 
   select(bwt, gestation, smoke, pred)
 ```
 
 ##
 
 ```{r}
-babies %>% 
-  modelr::add_predictions(model_gs) %>% 
-  modelr::add_residuals(model_gs) %>% 
+babies |> 
+  modelr::add_predictions(model_gs) |> 
+  modelr::add_residuals(model_gs) |> 
   select(bwt, gestation, smoke, pred, resid)
 ```
 
@@ -193,7 +193,7 @@ glance(model_g)$r.squared
 16% of the variation in birth weight is explained by gestation. Higher values of R squared is preferred.
 
 ```{r echo = FALSE, fig.align='center', message=FALSE, warning = FALSE, fig.height = 4}
-babies %>% 
+babies |> 
   ggplot() +
   aes(x = gestation, y = bwt) +
   geom_point() +
@@ -228,9 +228,9 @@ When comparing models with multiple predictors we rely on Adjusted R-squared.
 ##
 
 ```{r}
-babies %>% 
-  add_predictions(model_g) %>% 
-  add_residuals(model_g) %>% 
+babies |> 
+  add_predictions(model_g) |> 
+  add_residuals(model_g) |> 
   select(bwt, pred, resid)
 ```
 
@@ -238,9 +238,9 @@ babies %>%
 ##
 
 ```{r}
-babies %>% 
-  add_predictions(model_gsa) %>% 
-  add_residuals(model_gsa) %>% 
+babies |> 
+  add_predictions(model_gsa) |> 
+  add_residuals(model_gsa) |> 
   select(bwt, pred, resid)
 ```
 

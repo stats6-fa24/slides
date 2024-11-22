@@ -483,8 +483,8 @@ $ smoke     &lt;int&gt; 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
 <section id="section-4" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>babies <span class="sc">%&gt;%</span> </span>
-<span id="cb4-2"><a href="#cb4-2"></a>  modelr<span class="sc">::</span><span class="fu">add_predictions</span>(model_gs) <span class="sc">%&gt;%</span> </span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>babies <span class="sc">|&gt;</span> </span>
+<span id="cb4-2"><a href="#cb4-2"></a>  modelr<span class="sc">::</span><span class="fu">add_predictions</span>(model_gs) <span class="sc">|&gt;</span> </span>
 <span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">select</span>(bwt, gestation, smoke, pred)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,236 × 4
@@ -507,9 +507,9 @@ $ smoke     &lt;int&gt; 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
 <section id="section-5" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>babies <span class="sc">%&gt;%</span> </span>
-<span id="cb6-2"><a href="#cb6-2"></a>  modelr<span class="sc">::</span><span class="fu">add_predictions</span>(model_gs) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-3"><a href="#cb6-3"></a>  modelr<span class="sc">::</span><span class="fu">add_residuals</span>(model_gs) <span class="sc">%&gt;%</span> </span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>babies <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2"></a>  modelr<span class="sc">::</span><span class="fu">add_predictions</span>(model_gs) <span class="sc">|&gt;</span> </span>
+<span id="cb6-3"><a href="#cb6-3"></a>  modelr<span class="sc">::</span><span class="fu">add_residuals</span>(model_gs) <span class="sc">|&gt;</span> </span>
 <span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">select</span>(bwt, gestation, smoke, pred, resid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,236 × 5
@@ -773,9 +773,9 @@ $ smoke     &lt;int&gt; 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
 <section id="section-14" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>babies <span class="sc">%&gt;%</span> </span>
-<span id="cb25-2"><a href="#cb25-2"></a>  <span class="fu">add_predictions</span>(model_g) <span class="sc">%&gt;%</span> </span>
-<span id="cb25-3"><a href="#cb25-3"></a>  <span class="fu">add_residuals</span>(model_g) <span class="sc">%&gt;%</span> </span>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>babies <span class="sc">|&gt;</span> </span>
+<span id="cb25-2"><a href="#cb25-2"></a>  <span class="fu">add_predictions</span>(model_g) <span class="sc">|&gt;</span> </span>
+<span id="cb25-3"><a href="#cb25-3"></a>  <span class="fu">add_residuals</span>(model_g) <span class="sc">|&gt;</span> </span>
 <span id="cb25-4"><a href="#cb25-4"></a>  <span class="fu">select</span>(bwt, pred, resid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,236 × 3
@@ -798,9 +798,9 @@ $ smoke     &lt;int&gt; 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
 <section id="section-15" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>babies <span class="sc">%&gt;%</span> </span>
-<span id="cb27-2"><a href="#cb27-2"></a>  <span class="fu">add_predictions</span>(model_gsa) <span class="sc">%&gt;%</span> </span>
-<span id="cb27-3"><a href="#cb27-3"></a>  <span class="fu">add_residuals</span>(model_gsa) <span class="sc">%&gt;%</span> </span>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>babies <span class="sc">|&gt;</span> </span>
+<span id="cb27-2"><a href="#cb27-2"></a>  <span class="fu">add_predictions</span>(model_gsa) <span class="sc">|&gt;</span> </span>
+<span id="cb27-3"><a href="#cb27-3"></a>  <span class="fu">add_residuals</span>(model_gsa) <span class="sc">|&gt;</span> </span>
 <span id="cb27-4"><a href="#cb27-4"></a>  <span class="fu">select</span>(bwt, pred, resid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,236 × 3

@@ -592,8 +592,8 @@ $ smoke     &lt;int&gt; 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
 <h2>Baby number 148</h2>
 <div class="pull-left">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>babies <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">filter</span>(case <span class="sc">==</span> <span class="dv">148</span>) <span class="sc">%&gt;%</span> </span>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>babies <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">filter</span>(case <span class="sc">==</span> <span class="dv">148</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">select</span>(bwt, gestation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 2
@@ -981,7 +981,7 @@ smoke       -10.96413  -6.911199</code></pre>
 <dl class="code-annotation-container-grid">
 <dt class="fragment" data-target-cell="annotated-cell-8" data-target-annotation="1">1</dt>
 <dd class="fragment">
-<span data-code-cell="annotated-cell-8" data-code-annotation="1" data-code-lines="1">This allows us to sample 3 numbers from 1 to 100 without replacement, meaning a number can only be selected once.</span>
+<span data-code-cell="annotated-cell-8" data-code-lines="1" data-code-annotation="1">This allows us to sample 3 numbers from 1 to 100 without replacement, meaning a number can only be selected once.</span>
 </dd>
 </dl>
 </div>
