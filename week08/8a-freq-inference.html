@@ -675,6 +675,9 @@ p
 </div>
 <div class="callout-content">
 <p>If you want to type math notation correctly on Gradescope or Quarto out correctly as <span class="math inline">\(\mu\)</span> then you can write</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="sc">$</span><span class="er">$</span>\mu<span class="sc">$</span><span class="er">$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>The double dollar signs at the beginning and at the end let Gradescope know that you are writing a math equation.</p>
 </div>
 </div>
@@ -691,8 +694,8 @@ p
 </div>
 <div class="fragment">
 <p><strong>Hypotheses</strong></p>
-<p><span class="math inline">\(H_0: \pi &lt; 0.5\)</span><br>
-<span class="math inline">\(H_A: \pi \geq 0.5\)</span></p>
+<p><span class="math inline">\(H_0: \pi \leq 0.5\)</span><br>
+<span class="math inline">\(H_A: \pi &gt; 0.5\)</span></p>
 </div>
 <div class="fragment">
 <p>The parameter we want to infer about is <strong>a single proportion</strong>.</p>
@@ -860,7 +863,7 @@ response: <code>approve</code>(TRUE, FALSE, FALSE, TRUE,…)</p>
 <h2>Data</h2>
 <p>We will be using payroll data from Los Angeles Police Department (LAPD) from 2018.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">glimpse</span>(lapd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">glimpse</span>(lapd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 14,824
 Columns: 1
@@ -913,7 +916,12 @@ $ base_pay &lt;dbl&gt; 119321.60, 113270.70, 148116.00, 78676.87, 109373.63, 950
 <section id="section-19" class="slide level2">
 <h2></h2>
 <p>Let’s pretend we have never seen the data and we do not know the population parameter <span class="math inline">\(\mu\)</span>. In fact this is usually what happens in real life. We do not have the population information but we do want to know a population <strong>parameter</strong> (does not necessarily have to be the mean).</p>
-<p>. . . If we took a sample and calculated the sample mean, we would name this <strong>point estimate</strong> of the parameter.</p>
+<div class="fragment">
+<p>If we took a sample and calculated the sample mean, we would name this <strong>point estimate</strong> of the parameter.</p>
+</div>
+</section>
+<section id="section-20" class="slide level2">
+<h2></h2>
 <table>
 <colgroup>
 <col style="width: 34%">
@@ -991,7 +999,7 @@ $ base_pay &lt;dbl&gt; 119321.60, 113270.70, 148116.00, 78676.87, 109373.63, 950
 </div>
 </div>
 </section>
-<section id="section-20" class="slide level2">
+<section id="section-21" class="slide level2">
 <h2></h2>
 <p>We could do this over and over again. Don’t you worry! I did it.</p>
 <p>I have taken 10,000 samples of size 200 (sample size of 20 is just too small) and calculated their mean. The following slide shows the distribution of the <strong>sample means</strong>.</p>
@@ -1004,7 +1012,7 @@ $ base_pay &lt;dbl&gt; 119321.60, 113270.70, 148116.00, 78676.87, 109373.63, 950
 <h2>Sampling Distribution of the Mean</h2>
 
 <img data-src="8a-freq-inference_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
-<section id="section-21" class="slide level2">
+<section id="section-22" class="slide level2">
 <h2></h2>
 <p>When certain conditions are met then:</p>
 <p><span class="math display">\[\bar x \sim \text{approximately }N( \mu, \frac{\sigma^2}{n})\]</span></p>

@@ -321,7 +321,9 @@ The parameter we want to infer about is **a single mean**.
 
 If you want to type math notation correctly on Gradescope or Quarto out correctly as $\mu$ then you can write 
 
-```{r eval = FALSE}
+```{r}
+#| echo: true
+#| eval: false
 $$\mu$$
 ```
 
@@ -345,8 +347,8 @@ The double dollar signs at the beginning and at the end let Gradescope know that
 
 **Hypotheses** 
 
-$H_0: \pi < 0.5$  
-$H_A: \pi \geq 0.5$
+$H_0: \pi \leq 0.5$  
+$H_A: \pi > 0.5$
 
 . . .
 
@@ -585,10 +587,11 @@ Let's assume we went ahead and took a (random) sample of LAPD staff and asked th
 Let's pretend we have never seen the data and we do not know the population parameter $\mu$. In fact this is usually what happens in real life. We do not have the population information but we do want to know a population __parameter__ (does not necessarily have to be the mean).
 
 . . .
+
 If we took a sample and calculated the sample mean, we would name this __point estimate__ of the parameter. 
 
 
-
+##
 
 |                               | Parameter of Interest | Point Estimate / Sample Statistic |
 |-------------------------------|-----------------------|-----------------------------------|
